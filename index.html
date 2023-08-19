@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jane and John</title>
+	<meta charset="utf-8">
+	<meta name="viewport"  content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="John and Jane wedding.css">
+</head>
+<body>
+	<header class="bg">
+		<div class="text"><h1>Jane &amp; John</h1><h2>Are getting married</h2><h3>11.02.2023</h3></div>
+	</header>
+	<div class="nav">
+		<a href="#">Home</a>
+		<a href="#jane">Jane &amp; John</a>
+		<a href="#wed">Wedding</a>
+		<a href="#RSVP">RSVP</a>
+	</div>
+	<h1 id="jane">Jane &amp; John</h1>
+	<div class="first">
+		<img src="images/wedding_couple2.jpg" alt="couple">
+		<p>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<div>Weddings Details</div>
+	</div>
+	<div class="bg-2">
+		<div><h1>You Are Invited</h1><h3>Of course..</h3></div>
+	</div>
+	<h1 id="wed">THE WEDDING</h1>
+	<div class="first when">
+		<img src="images/wedding_location.jpg" alt="wedding location" class="location">
+		<div><h3>When</h3><p>Wedding Ceremony - 2:00pm</p><p>Reception & Dinner - 5:00pm</p></div>
+		<div><h3>Where</h3><p>Some place, an address</p><p>Some where, some address</p></div>
+	</div>
+	<div id="RSVP">
+		<h1>HOPE YOU CAN MAKE IT!</h1><h3>Kindly Respond By Febuary, 2023</h3><div class="button" onclick="rsvP()">RSVP</div>
+	</div>
+	<div class="footer">
+		Developed by <span>Hmabiola</span> | copyright &copy; 2023 | Template from <a href="https://www.w3schools.com"> W3schools</a>
+	</div>
+	<div id="overlay">
+		<div id="modal" class="modal">
+			<h1>Can You Come?</h1>
+			<p>We really hope you can make it.</p>
+			<form>
+				<input type="text" name="name" placeholder="Name(s)">
+			</form>
+			<i>Sincerly, John & Jane</i>
+			<button onclick="closeM()">Going</button>
+			<button onclick="closeM()">Can't Come</button>
+		</div>
+	</div>
+	
+	<script>
+		function rsvP() {
+		document.getElementById('modal').style.display="block";
+		document.getElementById('overlay').style.display="block";
+		}
+		function closeM() {
+			document.getElementById('modal').style.display="none";
+			document.getElementById('overlay').style.display="none";
+		}
+	</script>
+</body>
+</html>

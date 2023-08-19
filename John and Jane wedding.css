@@ -1,0 +1,250 @@
+@charset"UTF-8";
+body, html{height: 100%} 
+body{
+	font-family: Raleway,sans-serif; 
+	background-color: rgba(180,100,100,0.3);
+}
+*{
+	box-sizing: border-box;
+	margin:0px;
+} 
+h1{
+	margin:50px 0px;
+	font-size: 37px; 
+	text-align: center;
+	color: rgba(80,80,80,0.7);
+}
+.bg{
+	background-image: url(images/wedding_couple.jpg);
+	background-position: center;
+	background-repeat: no-repeat; 
+	background-size: cover;
+	min-height: 100%;
+	filter: grayscale(50%);
+	-webkit-filter:grayscale(50%); 
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+ div.text{
+ 	position: absolute;
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%,-50%);
+	color: rgb(255,255,255);
+}
+ div.text h1,.bg-2 h1{
+ 	font-size: 70px;
+	font-weight: lighter;
+	margin-bottom: 20px; 
+	color: rgb(255,255,255);
+}
+ div.text h2,.bg-2 h2{
+ 	font-size: 30px;
+	letter-spacing: 5px; 
+	font-weight: lighter;
+	margin:10px 0px;
+ }div.text h3{
+ 	letter-spacing: 2px; 
+	font-size: 35px;
+	margin:15px 0px;
+}
+ div.nav{
+ 	width: 100%; 
+	background-color: rgba(255,255,255,0.7);
+	z-index: 1; 
+	position: fixed;
+	bottom: 0px;;
+	padding: 5px;
+}
+ div.nav a{
+ 	text-decoration: none; 
+	padding: 10px;
+	width: 25%;
+	color: rgb(0,0,0); 
+	float: left;
+	text-align: center;
+}
+div.nav:hover{background-color: rgb(255,255,255);}
+div.nav a:hover{background-color: rgba(180,180,180,0.3);}
+div.first{width: 70%; margin:20px auto;}
+img{
+	width: 100%;
+	-webkit-filter:grayscale(50%); 
+	filter: grayscale(70%);
+}
+ div.first p{
+ 	margin: 60px 0px;
+ 	word-spacing: 2px; 
+	line-height: 24px;
+	font-size: 15px; 
+	font-style: italic;color: rgb(80,80,80,);}
+div.first div{
+	background-color: rgb(0,0,0);
+	color: rgb(255,255,255);
+	width: 170px;
+	margin: 0px auto; 
+	padding: 15px; 
+	font-size: 18px;
+}
+div.bg-2{
+	background-image: url(images/flowers.jpg);
+	width: 100%;
+	height:100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin:50px 0px;
+	position: relative;
+	text-align: center;color: rgb(255,255,255);
+}
+div.bg-2 > div {
+	position: absolute;
+	left: 50%; 
+	top: 50%; 
+	transform: translate(-50%,-50%);
+}
+div.bg-2 div > h3{
+	margin-top: 50px;
+	word-spacing: 4px; 
+	font-weight: lighter; 
+	font-size: 30px; 
+}
+img.location{
+	border-radius: 10px;
+	filter: grayscale(70%);
+	-webkit-filter:grayscale(70%);
+}
+div.when{
+	overflow: hidden;
+	padding-bottom: 0px;
+}
+div.when > div{
+	width: 50%;
+	padding: 20px 30px;
+	float: left;
+	margin: 50px 0px;
+	text-align: center;
+	background-color: inherit;
+	color: inherit;
+}
+div.when p{
+	margin: 20px 0px;
+	font-style: normal;
+}
+div#RSVP{
+	background-color: rgba(255,80,80,0.15);
+	text-align: center;
+	padding: 70px;
+}
+div#RSVP > h1, div#RSVP > h3{
+	color: rgb(0,0,0);
+	font-weight: lighter;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+}
+div.button{
+	text-align: center;
+	padding: 15px; 
+	font-size: 30px;
+	width:200px;
+	margin:0px auto;
+	margin-top: 50px;
+	color: rgb(255,255,255);
+	background-color: rgba(255,80,80,0.7);
+	border-radius: 5px;
+}
+div.button:hover{
+	background-color: rgb(180,180,180);
+	color: rgb(0,0,0);
+	border-radius:0px;
+	cursor: pointer;
+}
+div.footer{
+	background-color:rgb(0,0,0);
+	color: rgb(255,255,255);
+	text-align: center;
+	padding: 50px;
+}
+div.footer span{
+	background-color: rgb(255,255,255);
+	padding: 2px; 
+	color: rgb(0,0,0);
+}
+div.footer a{color: rgb(255,255,255);}
+#overlay{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+	background-color: rgba(0,0,0,0.3);
+}
+.modal{
+	width: 40%;
+	z-index: 3;
+	display: none; 
+	margin: 20vh auto;
+	background-color: #fff;
+	padding: 30px; 
+	overflow: hidden;
+	text-align: center;
+	animation: animate 0.3s;
+}
+.modal h1{
+	font-weight: lighter;
+	margin: 30px 0px;
+	letter-spacing: 3px; 
+	color: #000;
+}
+.modal p{margin: 10px 0px;}
+.modal input{
+	padding: 10px;
+	width: 100%;
+	border:1px solid #ddd;
+}
+.modal i{
+	display: block;
+	margin: 20px 0px;
+}
+.modal button{
+	width: 50%;
+	font-size: 16px; 
+	float: left;
+	padding: 10px;
+	color: #fff;
+	background-color: mediumseagreen;
+	border:none; 
+	cursor: pointer;
+}
+.modal button:last-child{background-color: #ff3030;}
+.modal button:hover{
+	background-color: #ddd; 
+	color: #000;
+}
+#overlay{
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.3);
+	left: 0px;
+	display: none;
+}
+@keyframes animate{
+	from{transform: scale(0);}
+	to{transform: scale(1);}
+}
+@media screen and (max-width: 600px){
+	div.first{width: 90%;}
+	div.text h1, .bg-2 h1{font-size: 7vw;} 
+	h1{font-size: 4vw;}h3{font-size: 3vw;}
+	div.text h2, .bg-2 h2{font-size: 5vw;}
+	div.text h3{font-size: 4vw;}
+	div.nav{display: none;}
+	div.first p{font-size: 3vw;}
+	div.when div{width: 100%;}
+	div.footer{font-size: 3vw;}
+	.modal{width: 99%;}
+}
